@@ -1,1 +1,1 @@
-# meditation-app
+# Meditation App
