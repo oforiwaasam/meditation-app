@@ -1,1 +1,3 @@
 # Meditation App
+
+## Features
