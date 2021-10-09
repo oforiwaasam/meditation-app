@@ -31,7 +31,7 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) rotate(-90deg);
     pointer-events: none;
 }
 
@@ -88,11 +88,11 @@ video {
     padding: 30px;
 }
 
-sound-picker button:nth-child(1) {
+.sound-picker button:nth-child(1) {
     background: #4972a1;
 }
 
-sound-picker button:nth-child(2) {
+.sound-picker button:nth-child(2) {
     background: #a14f49;
 }
 
