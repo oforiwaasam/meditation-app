@@ -35,7 +35,21 @@ const app = () => {
             play.src = './svg/play.svg';
         }
     }
+
+    // animate the circle
+    song.ontimeupdate = () => {
+        let currentTime = song.currentTime;
+        let elapsedTime = fakeDuration - currentTime;
+        // seconds jump back to 0 when elapsed time is 60
+        let seconds = Math.floor(elapsedTime % 60);
+        let minutes = Math.floor(elapsedTime / 60);
+
+        // animate the circle
+        let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+        outline.style.strokeDashoffset = progress;
+
+    };
     
-}
+};
 
 app();
